@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Marble | Original Makrana Marble Supplier</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        marble: {
+                            50: '#fdfbf7',
+                            100: '#f4ece1',
+                            200: '#e5d7c3',
+                            800: '#3d342b',
+                            900: '#231d17',
+                        },
+                        gold: {
+                            400: '#d4af37',
+                            500: '#c5a059',
+                            600: '#aa823d',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 13, 11, 0.75), rgba(15, 13, 11, 0.65)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+        }
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(197, 160, 89, 0.3);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #231d17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5a059;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="bg-marble-50 text-marble-900 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-marble-900 text-gold-400 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
+        <i class="fa-solid fa-gem mr-2"></i> Direct Quarry Source & Manufacturers of 100% Original Makrana Marble | Strength • Beauty • Trust[cite: 5]
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="navbar" class="sticky top-0 z-50 bg-marble-900/95 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-gold-600 to-gold-400 flex items-center justify-center text-marble-900 font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-monument"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-2xl font-bold tracking-wider text-white">YES <span class="text-gold-400">MARBLE</span></span>
+                    <span class="block text-[10px] uppercase tracking-widest text-gold-400/80 font-medium">Makrana, Rajasthan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-200">
+                <a href="#home" class="hover:text-gold-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-gold-400 transition-colors">About Us</a>
+                <a href="#products" class="hover:text-gold-400 transition-colors">Products</a>
+                <a href="#video" class="hover:text-gold-400 transition-colors">Quarry VSL</a>
+                <a href="#gallery" class="hover:text-gold-400 transition-colors">Projects</a>
+                <a href="#estimator" class="hover:text-gold-400 transition-colors">Cost Estimator</a>
+                <a href="#reviews" class="hover:text-gold-400 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:6367258832" class="flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-marble-900 font-bold px-5 py-2.5 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>+91 63672 58832</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-marble-900 border-t border-gold-500/20 px-6 py-6 space-y-4">
+            <a href="#home" class="block text-white hover:text-gold-400 font-medium">Home</a>
+            <a href="#about" class="block text-white hover:text-gold-400 font-medium">About Us</a>
+            <a href="#products" class="block text-white hover:text-gold-400 font-medium">Products</a>
+            <a href="#video" class="block text-white hover:text-gold-400 font-medium">Quarry VSL</a>
+            <a href="#gallery" class="block text-white hover:text-gold-400 font-medium">Projects Gallery</a>
+            <a href="#estimator" class="block text-white hover:text-gold-400 font-medium">Cost Estimator</a>
+            <a href="#reviews" class="block text-white hover:text-gold-400 font-medium">Client Reviews</a>
+            <a href="#contact" class="block text-white hover:text-gold-400 font-medium">Contact Us</a>
+            <div class="pt-2">
+                <a href="tel:6367258832" class="flex items-center justify-center gap-2 bg-gold-500 text-marble-900 font-bold py-3 rounded-lg w-full">
+                    <i class="fa-solid fa-phone"></i> Call Now: 6367258832
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-4 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto py-20 relative z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-gold-500/20 border border-gold-500/40 text-gold-400 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-6 animate-pulse">
+                ★ The Pride of Rajasthan ★
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Original Makrana Marble <br><span class="text-gold-400 text-glow">Strength • Beauty • Trust</span>[cite: 5]
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Build your dream home with timeless white purity and peerless durability. Sourced directly from legendary Makrana quarries with generations of unmatched trust[cite: 5].
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#products" class="w-full sm:w-auto bg-gold-500 hover:bg-gold-600 text-marble-900 font-bold px-8 py-4 rounded-full shadow-2xl transition-all transform hover:-translate-y-1 text-base">
+                    Explore Marble Collection <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="https://wa.me/916367258832?text=Hi%20Yes%20Marble,%20I%20want%20to%20enquire%20about%20Original%20Makrana%20Marble." target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-full shadow-2xl transition-all transform hover:-translate-y-1 text-base flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- Trust Badges Under Hero -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-white/10 text-white">
+                <div class="text-center">
+                    <span class="block font-serif text-3xl font-bold text-gold-400">100%</span>
+                    <span class="text-xs tracking-wider uppercase text-gray-400">Original Makrana</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-serif text-3xl font-bold text-gold-400">No Shine Loss</span>
+                    <span class="text-xs tracking-wider uppercase text-gray-400">Lifelong Gloss</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-serif text-3xl font-bold text-gold-400">Pan-India</span>
+                    <span class="text-xs tracking-wider uppercase text-gray-400">Safe Delivery</span>
+                </div>
+                <div class="text-center">
+                    <span class="block font-serif text-3xl font-bold text-gold-400">Direct</span>
+                    <span class="text-xs tracking-wider uppercase text-gray-400">Quarry Wholesale Prices</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Makrana Marble Interior" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-marble-200 rounded-2xl -z-0 hidden sm:block"></div>
+                <div class="absolute top-6 -left-6 bg-marble-900 text-white p-6 rounded-2xl shadow-xl z-20 border border-gold-500/30">
+                    <span class="block font-serif text-4xl font-bold text-gold-400 mb-1">Legacy</span>
+                    <span class="text-xs uppercase tracking-widest text-gray-300">Generations of Craftsmanship</span>
+                </div>
+            </div>
+            <div>
+                <div class="text-center lg:text-left">
+                    <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">About Yes Marble</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-marble-900 mt-2 mb-6">
+                        The Undisputed King of Natural White Marbles
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Welcome to **Yes Marble**, your premier destination for authentic, high-grade Makrana marble[cite: 5]. Makrana marble is world-renowned for its purity, calcite structure, and extraordinary longevity—the very marble used in historical masterpieces like the Taj Mahal.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We pride ourselves on direct quarry extraction, precise cutting, and mirror-finish polishing. When you build with Yes Marble, you invite enduring grace, strength, and pristine luxury into your home or commercial space[cite: 5].
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm border border-marble-200">
+                        <div class="text-gold-500 text-2xl mt-1"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h4 class="font-bold text-marble-900 mb-1">Unmatched Purity</h4>
+                            <p class="text-xs text-gray-500">Highest percentage of calcite ensuring zero color fading over decades.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm border border-marble-200">
+                        <div class="text-gold-500 text-2xl mt-1"><i class="fa-solid fa-medal"></i></div>
+                        <div>
+                            <h4 class="font-bold text-marble-900 mb-1">Direct Factory Rates</h4>
+                            <p class="text-xs text-gray-500">Eliminate middlemen with transparent pricing straight from Makrana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Services Section -->
+    <section id="products" class="py-24 bg-marble-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Our Exclusive Catalog</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-marble-900 mt-2 mb-4">
+                    Original Makrana Varieties
+                </h2>
+                <p class="text-gray-600">
+                    Explore our hand-picked selections of pristine white marbles, rich albetas, and exquisite pink-veined variations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-marble-200 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=600" alt="Makrana White Marble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-marble-900/80 backdrop-blur-md text-gold-400 text-xs font-bold px-3 py-1 rounded-full">Pure White</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-marble-900 mb-2">Makrana White Pure</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                            The classic milky-white marble with subtle grey/black linear veins. The prime choice for luxury temples, flooring, and grand living rooms.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-xs font-semibold uppercase text-gold-600 tracking-wider">Available in Slabs & Tiles</span>
+                            <a href="https://wa.me/916367258832?text=I%20want%20to%20know%20price%20for%20Makrana%20White%20Pure." target="_blank" class="bg-marble-900 hover:bg-gold-500 hover:text-marble-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+                                Get Price
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-marble-200 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&q=80&w=600" alt="Makrana Albeta Marble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-marble-900/80 backdrop-blur-md text-gold-400 text-xs font-bold px-3 py-1 rounded-full">Most Demanded</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-marble-900 mb-2">Makrana Albeta Marble</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                            Distinguished by prominent, gorgeous brown and grey patterns over a rich white base. Exceptional strength and stunning visual depth.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-xs font-semibold uppercase text-gold-600 tracking-wider">Available in Custom Sizes</span>
+                            <a href="https://wa.me/916367258832?text=I%20want%20to%20know%20price%20for%20Makrana%20Albeta%20Marble." target="_blank" class="bg-marble-900 hover:bg-gold-500 hover:text-marble-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+                                Get Price
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-marble-200 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Makrana Dungri Marble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-marble-900/80 backdrop-blur-md text-gold-400 text-xs font-bold px-3 py-1 rounded-full">Elegant Vibe</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-marble-900 mb-2">Makrana Dungri Marble</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                            Features delicate dots and cloud-like formations on smooth white stone. Highly favored for large commercial complexes, villas, and stairs.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-xs font-semibold uppercase text-gold-600 tracking-wider">Factory Direct Slabs</span>
+                            <a href="https://wa.me/916367258832?text=I%20want%20to%20know%20price%20for%20Makrana%20Dungri%20Marble." target="_blank" class="bg-marble-900 hover:bg-gold-500 hover:text-marble-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+                                Get Price
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VSL / Video Section -->
+    <section id="video" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+        <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Visual Walkthrough</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-marble-900 mt-2 mb-6">
+            Witness Our Makrana Quarry & Processing Unit
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+            Watch how raw, authentic blocks are mined directly from the heart of Makrana and precisely calibrated into mirror-polished architectural marvels.
+        </p>
+
+        <!-- Video Player Mockup / Responsive Embed -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-marble-900 aspect-video border-4 border-gold-500/30 flex items-center justify-center group">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200" alt="Quarry Video Preview" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-marble-900/80 via-transparent to-transparent flex flex-col items-center justify-center p-6">
+                <a href="https://www.youtube.com/watch?v=A7xuNWRiPn4" target="_blank" class="w-20 h-20 rounded-full bg-gold-500 text-marble-900 flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform animate-bounce">
+                    <i class="fa-solid fa-play ml-1"></i>
+                </a>
+                <span class="text-white font-serif text-xl font-bold mt-4">Play Makrana Quarry Showcase</span>
+                <span class="text-gray-300 text-xs mt-1">Direct from Rajasthan quarries to your doorstep</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Gallery Section -->
+    <section id="gallery" class="py-24 bg-marble-900 text-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 font-semibold uppercase tracking-widest text-sm">Masterpiece Gallery</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2 mb-4">
+                    Stunning Installations in Homes & Hotels
+                </h2>
+                <p class="text-gray-400">
+                    A glimpse of breathtaking flooring, wall claddings, and elevation works crafted with Yes Marble.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600" alt="Luxury Living Room Flooring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Luxury Residence</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Makrana Albeta Living Room Floor</h4>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=600" alt="Hotel Lobby Marble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Hotel Project</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Grand Hotel Lobby Cladding</h4>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600" alt="Modern Staircase Marble" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Villa Staircase</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Pure White Makrana Steps</h4>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="Modern Kitchen Countertop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Kitchen Design</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Dungri Marble Countertops</h4>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600" alt="Mandir Marble Panel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Religious Space</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Pristine White Temple Architecture</h4>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-80 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600" alt="Exterior Elevation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-marble-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Exterior Facade</span>
+                        <h4 class="text-white font-serif text-lg font-bold">Architectural Elevation Stones</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Estimator Interactive Section -->
+    <section id="estimator" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-marble-200">
+            <div class="text-center mb-10">
+                <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Quick Calculator</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-marble-900 mt-2 mb-3">
+                    Estimate Your Marble Requirement
+                </h2>
+                <p class="text-gray-600 text-sm">Select your estimated area and get instant guidance on pricing & availability.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-marble-900 mb-2">Select Marble Variety</label>
+                        <select id="calc-variety" class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500">
+                            <option value="white">Makrana White Pure</option>
+                            <option value="albeta">Makrana Albeta Marble</option>
+                            <option value="dungri">Makrana Dungri Marble</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-marble-900 mb-2">Approximate Area (Sq. Ft.)</label>
+                        <input type="number" id="calc-sqft" value="1500" class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500" placeholder="e.g. 2000">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-marble-900 mb-2">Requirement Type</label>
+                        <select id="calc-type" class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500">
+                            <option value="flooring">Full House Flooring</option>
+                            <option value="elevation">Elevation & Wall Cladding</option>
+                            <option value="commercial">Commercial / Hotel Project</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-marble-900 text-white p-8 rounded-2xl flex flex-col justify-between h-full">
+                    <div>
+                        <h4 class="font-serif text-xl font-bold text-gold-400 mb-4">Summary & Quotation</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed mb-6">
+                            Since natural stone varies by slab selection, thickness, and transport destination, our experts provide exact factory rates instantly via WhatsApp.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/916367258832?text=Hi%20Yes%20Marble,%20I%20calculated%20my%20requirement%20and%20want%20best%20factory%20rates." target="_blank" class="w-full bg-gold-500 hover:bg-gold-600 text-marble-900 font-bold py-3.5 px-6 rounded-xl text-center block shadow-lg transition-all">
+                            <i class="fa-brands fa-whatsapp mr-2"></i> Request Exact Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-marble-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-marble-900 mt-2 mb-4">
+                    Trusted By Homeowners & Builders
+                </h2>
+                <p class="text-gray-600">See what our satisfied clients across India have to say about our Makrana marble quality.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-marble-200">
+                    <div class="text-gold-500 text-lg mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">
+                        "We bought Makrana Albeta for our entire duplex in Jaipur. The shine and purity is breathtaking. Yes Marble provided genuine quality at factory rates."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-gold-500/20 text-gold-600 font-bold flex items-center justify-center font-serif text-lg">RK</div>
+                        <div>
+                            <h5 class="font-bold text-marble-900 text-sm">Rajendra Kumawat</h5>
+                            <span class="text-xs text-gray-500">Homeowner, Jaipur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-marble-200">
+                    <div class="text-gold-500 text-lg mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">
+                        "As a builder, I source all pure white Makrana marble from Yes Marble. Their delivery is safe and prompt across states with zero transit damage."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-gold-500/20 text-gold-600 font-bold flex items-center justify-center font-serif text-lg">AS</div>
+                        <div>
+                            <h5 class="font-bold text-marble-900 text-sm">Amit Sharma</h5>
+                            <span class="text-xs text-gray-500">Architect & Builder, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-marble-200">
+                    <div class="text-gold-500 text-lg mb-4 flex gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">
+                        "Extremely professional service! They showed us live slab videos on WhatsApp and delivered exact matching lots for our hotel project in Udaipur."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-gold-500/20 text-gold-600 font-bold flex items-center justify-center font-serif text-lg">VM</div>
+                        <div>
+                            <h5 class="font-bold text-marble-900 text-sm">Vikram Mehta</h5>
+                            <span class="text-xs text-gray-500">Hotelier, Udaipur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Got Questions?</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-marble-900 mt-2">
+                Frequently Asked Questions
+            </h2>
+        </div>
+
+        <div class="space-y-4">
+            <details class="bg-white p-6 rounded-2xl shadow-sm border border-marble-200 cursor-pointer group">
+                <summary class="font-bold text-marble-900 flex justify-between items-center">
+                    <span>How do I verify if my Makrana marble is 100% original?</span>
+                    <i class="fa-solid fa-chevron-down text-gold-600 group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <p class="text-gray-600 text-sm mt-4 leading-relaxed">
+                    Original Makrana marble has a dense interlocking calcite crystal structure which reflects light like sugar granules and does not lose shine or yellow over time. We provide authenticity guarantee with every lot.
+                </p>
+            </details>
+
+            <details class="bg-white p-6 rounded-2xl shadow-sm border border-marble-200 cursor-pointer group">
+                <summary class="font-bold text-marble-900 flex justify-between items-center">
+                    <span>Do you provide delivery across India?</span>
+                    <i class="fa-solid fa-chevron-down text-gold-600 group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <p class="text-gray-600 text-sm mt-4 leading-relaxed">
+                    Yes! We securely pack and ship our marble slabs and tiles via trusted transport logistics to all major cities across India with complete transit insurance.
+                </p>
+            </details>
+
+            <details class="bg-white p-6 rounded-2xl shadow-sm border border-marble-200 cursor-pointer group">
+                <summary class="font-bold text-marble-900 flex justify-between items-center">
+                    <span>What is the price range of Makrana Marble?</span>
+                    <i class="fa-solid fa-chevron-down text-gold-600 group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <p class="text-gray-600 text-sm mt-4 leading-relaxed">
+                    Prices vary based on whiteness, absence of veins, thickness, and lot size. Contact us directly on WhatsApp at +91 63672 58832 for live stock pricing.
+                </p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section class="py-12 bg-marble-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-xl border border-marble-200 bg-white grid grid-cols-1 lg:grid-cols-3">
+            <div class="p-8 sm:p-12 flex flex-col justify-center bg-marble-900 text-white">
+                <span class="text-gold-400 font-semibold uppercase tracking-widest text-xs">Visit Our Stockyard</span>
+                <h3 class="font-serif text-3xl font-bold mt-2 mb-6">Makrana, Rajasthan</h3>
+                <div class="space-y-4 text-sm text-gray-300">
+                    <p class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-gold-400 mt-1 text-lg"></i>
+                        <span>Main Quarry & Stockyard Road, Makrana, Rajasthan - 341505</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold-400 text-lg"></i>
+                        <span>+91 63672 58832</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold-400 text-lg"></i>
+                        <span>yesmarblemakrana@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="lg:col-span-2 min-h-[350px]">
+                <iframe class="w-full h-full min-h-[350px]" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Makrana,%20Rajasthan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-gold-600 font-semibold uppercase tracking-widest text-sm">Get In Touch</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-marble-900 mt-2 mb-4">
+                Start Your Project With Yes Marble
+            </h2>
+            <p class="text-gray-600">Send us your inquiry and our team will connect with custom slab photographs and rates.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Yes Marble. We will contact you shortly.');" class="bg-white p-8 sm:p-12 rounded-3xl shadow-2xl border border-marble-200 space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-semibold text-marble-900 mb-2">Your Full Name</label>
+                    <input type="text" required class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold-500" placeholder="e.g. Rahul Sharma">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-marble-900 mb-2">Mobile Number</label>
+                    <input type="tel" required value="6367258832" class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold-500" placeholder="6367258832">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-marble-900 mb-2">City / Delivery Location</label>
+                <input type="text" required class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold-500" placeholder="e.g. Mumbai, Delhi, Bangalore">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-marble-900 mb-2">Your Message / Requirement</label>
+                <textarea rows="4" required class="w-full bg-marble-50 border border-marble-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold-500" placeholder="Mention marble type, quantity in sq.ft., or any specific query..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-marble-900 font-bold py-4 rounded-xl shadow-lg transition-all text-base">
+                Send Inquiry Now
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-marble-900 text-gray-300 pt-16 pb-12 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div class="md:col-span-1">
+                <a href="#" class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center text-marble-900 font-bold text-lg">
+                        <i class="fa-solid fa-monument"></i>
+                    </div>
+                    <span class="font-serif text-2xl font-bold tracking-wider text-white">YES <span class="text-gold-400">MARBLE</span></span>
+                </a>
+                <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                    Direct quarry suppliers and manufacturers of 100% original Makrana marble[cite: 5]. Strength, beauty, and trust delivered pan-India[cite: 5].
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/yesmarblemakrana" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold-500 hover:text-marble-900 flex items-center justify-center text-white transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/916367258832" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold-500 hover:text-marble-900 flex items-center justify-center text-white transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:6367258832" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold-500 hover:text-marble-900 flex items-center justify-center text-white transition-colors">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-white font-bold text-lg mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-gold-400 transition-colors">About Us</a></li>
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Products Collection</a></li>
+                    <li><a href="#video" class="hover:text-gold-400 transition-colors">Quarry VSL</a></li>
+                    <li><a href="#gallery" class="hover:text-gold-400 transition-colors">Projects Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-white font-bold text-lg mb-4">Marble Varieties</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Makrana White Pure</a></li>
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Makrana Albeta Marble</a></li>
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Makrana Dungri Marble</a></li>
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Pink Albeta Slabs</a></li>
+                    <li><a href="#products" class="hover:text-gold-400 transition-colors">Marble Cutpieces & Tiles</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-white font-bold text-lg mb-4">Contact Info</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>
+                        <span>Makrana, Rajasthan - 341505</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span>+91 6367258832</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-gold-400"></i>
+                        <span>@yesmarblemakrana</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400">
+            <p>&copy; 2026 Yes Marble. All rights reserved.</p>
+            <p class="mt-4 sm:mt-0 font-medium text-gold-400">Designed by Marwar Infotech</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call & WhatsApp Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/916367258832?text=Hi%20Yes%20Marble,%20I%20visited%20your%20website%20and%20want%20to%20know%20more." target="_blank" class="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all transform hover:scale-110 animate-bounce" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:6367258832" class="w-14 h-14 bg-gold-500 hover:bg-gold-600 text-marble-900 rounded-full flex items-center justify-center text-xl shadow-2xl transition-all transform hover:scale-110" title="Call Us">
+            <i class="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript for Mobile Menu toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
